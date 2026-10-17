@@ -1,0 +1,6 @@
+train: /home/jovyan/work/repo_conteo_gallinas/data/dataset/train/images
+val: /home/jovyan/work/repo_conteo_gallinas/data/dataset/val/images
+
+nc: 1
+
+names: ["gallina"]
