@@ -1,0 +1,2 @@
+epocas_inicial,epocas_fin,batch,learning_rate,optimizer,total_imagenes,total_imagenes_train,total_imagenes_val,tiempo_minutos,tiempo_horas,map50,map50_95,precision,recall
+50,50,8,0.01,SGD,63,50,13,1.0256333333333334,0.01704388888888889,0.5560,0.1823,0.6099,0.583560
