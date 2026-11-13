@@ -1,0 +1,38 @@
+{
+  "nombre": "yolo26m_ft_gs_11",
+  "version": "v11",
+  "etapa": "2. Grid Search",
+  "modelo_base": "yolo26m",
+  "pesos_base": "model/yolo26m.pt",
+  "config_entrenamiento": {
+    "data": "artifacts/full_dataset.yaml",
+    "epochs": 100,
+    "batch": 6,
+    "lr0": 0.01,
+    "optimizer": "SGD",
+    "imgsz": 640,
+    "seed": 123,
+    "deterministic": true,
+    "workers": 0,
+    "device": [
+      0,
+      1
+    ],
+    "project": ".",
+    "name": "yolo26m_ft_gs_11",
+    "data_augmentation": "valores por defecto de Ultralytics (sin overrides)"
+  },
+  "metricas_validacion": {
+    "map50": 0.66858,
+    "map50_95": 0.26174,
+    "precision": 0.674,
+    "recall": 0.65498
+  },
+  "tiempo_entrenamiento_min": 5.762983333333334,
+  "productividad_map50_95_por_min": 0.04541744871724424,
+  "score_final": 0.9754,
+  "delta_rel_vs_yolo26m_baseline_%": 6.641134289439377,
+  "delta_rel_vs_mejor_baseline_%": 4.922632887035983,
+  "origen": "artifacts/yolo26_ft_gs_11.csv (numero=27)",
+  "criterio_seleccion": "mayor mAP50-95 entre los finalistas; desempate por productividad"
+}

@@ -1,0 +1,6 @@
+ranking,etapa,modelo,epocas,batch,lr,optimizer,data_aug,map50,map50_95,precision,recall,tiempo_minutos,fuente,metricas_completas,delta_vs_yolo26m,delta_rel_%,map50_95_por_min,score_final,puesto_score
+1,2. Grid Search · mejor,yolo26m,100,6,0.010000,SGD,No,0.668580,0.261740,0.674000,0.654980,5.762983,yolo26_ft_gs_11.csv (numero=27),True,0.016300,6.641134,0.045417,0.975400,1
+2,3. Optuna · mejor,yolo26m,291,11,0.002153,SGD,No,,0.259620,,,9.580769,yolo26_ft_opt_11.csv (number=41),False,0.014180,5.777379,0.027098,0.780100,2
+3,4. Data Augmentation · mejor,yolo26m,291,11,0.002153,SGD,Sí,,0.254450,,,13.892728,yolo26_data_augmentation_11.csv (number=10),False,0.009010,3.670958,0.018315,0.469800,3
+4,1. Baseline · mejor global,yolo12m,100,16,0.010000,auto,No,0.654170,0.249460,0.657060,0.665690,4.916850,modelos_baselines_11.csv (yolo12m),True,0.004020,1.637875,0.050736,0.359600,4
+5,1. Baseline · yolo26m (referencia),yolo26m,100,16,0.010000,auto,No,0.658280,0.245440,0.685390,0.642950,4.857283,modelos_baselines_11.csv (yolo26m),True,0.000000,0.000000,0.050530,0.149000,5
